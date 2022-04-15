@@ -26,6 +26,9 @@ function handleClick(click) {
 
 function handleSpellsObj(obj, str) {
     console.log(obj)
+
+    // ERASE THE DOM !!!!!
+
     document.querySelector('.flex-child:first-child').style = 'border-right: 2px solid black;'
     document.querySelector(`#descTitle${str}`).innerText = obj.name ? obj.name : 'Not Found'
     document.querySelector(`#type${str}`).innerText = obj.school.name ? `Type: ${obj.school.name}` : 'none'
